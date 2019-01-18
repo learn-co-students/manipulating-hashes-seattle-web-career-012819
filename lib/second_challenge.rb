@@ -8,5 +8,6 @@ def second_challenge
 
   #code your solution here!
 
-  grocery_items << dairy.values << vegetable.values << meat.values << grains.values
+  groceries.values.flatten
+  
 end
