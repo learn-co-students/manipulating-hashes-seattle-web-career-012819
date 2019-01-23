@@ -5,9 +5,11 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
-
-  #code your solution here!
-
-  
-
+  grocerylist = []
+  groceries.each do |food_group, item_array|
+    if food_group == :dairy || food_group == :vegetable || food_group == :meat || food_group == :grains
+      grocerylist.concat item_array
+    end
+  end
+  grocerylist
 end
