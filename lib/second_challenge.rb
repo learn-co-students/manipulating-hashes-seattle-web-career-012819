@@ -5,9 +5,11 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
-
-  #code your solution here!
-
-  
-
+plinko = []
+groceries.each do |categ, array|
+  array.each do |i|
+    plinko << i
+  end
+  end
+  plinko
 end
