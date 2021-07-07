@@ -7,7 +7,12 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
+  types = groceries.keys
+  all_products = []
+  types.each do |category|
+    values = groceries.fetch(category)
+    all_products.concat(values)
+  end
+  all_products
 
 end
